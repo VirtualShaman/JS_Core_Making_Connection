@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="container center">
+            <h1>Profile</h1>
+            <ul class="nav-links">
+                <li><a class="links" href="#">Home</a></li>
+                <li><a class="links" href="#" class="active">My Profile</a></li>
+                <li><a class="links" href="#">Find Connections</a></li>
+            </ul>
+            <button class="btn">Sign Out</button>
+        </div>
+    </div>
+    <div class="container flexStart">
+        <div class="column1">
+            <div class="ProfileCard" >
+                <div class="color" ></div>
+                <div class="info">
+                    <img id="user" src="images/jane-m.jpg" alt="user icon">
+                    <h1 id="name">Jane Doe</h1>
+                    <div id="location">
+                        <img id="marker" src="icons/map-marker.png" alt="map marker">
+                        <h2>Seattle</h2>
+                    </div>
+                    <p>Developer | Engineer | Problem Solver</p>
+                    <p>Master of shadows and the Internet!</p>
+                    <div id="settings">
+                        <img onclick="newme()" id="gear" src="icons/gear.png" alt="gear icon">
+                        <a id="EditLink" href="#">edit profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <div class="estatus">
+                    <p id="title">Education</p>
+                </div>
+                <div id="info">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <p id="date">Dec 2019 - Mar 2020</p>
+                    <p>Triple black belt in Python, Mern, and C#...</p>
+                </div>
+            </div>
+        </div>
+        <div class="column2">
+            <div class="requests">
+                <div class="status">
+                    <div id="number">2</div>
+                    <p id="title">Connection Requests</p>
+                </div>
+                <div class="request_list">
+                    <div class="request" id="request1">
+                        <div class="users">
+                            <img class="user2" src="images/todd-s.jpg" alt="user icon">
+                            <p>Todd E</p>
+                        </div>
+                        <div class="aod">
+                            <img onclick="accept()" class="circle" src="icons/accept-circle.png" alt="accept">
+                            <img onclick="reject()"class="circle" src="icons/close-circle.png" alt="reject">
+                        </div>
+                    </div>
+                    <div class="request"  id="request2">
+                        <div class="users">
+                            <img class="user2" src="images/phil-s.jpg" alt="user icon">
+                            <p>Phil K</p>
+                        </div>
+                        <div class="aod">
+                            <img onclick="accept2()"class="circle" src="icons/accept-circle.png" alt="accept">
+                            <img onclick="reject2()"class="circle" src="icons/close-circle.png" alt="reject">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="connections">
+                <div class="status">
+                    <div id="numbers">500</div>
+                    <p id="title">Your Connections</p>
+                </div>
+                <div class="request_list">
+                        <div class="users">
+                            <img id="connection" src="images/adrien-s.jpg" alt="user icon">
+                            <p>Adrien D</p>
+                        </div>
+                        <div class="users">
+                            <img id="connection" src="images/anne-s.jpg" alt="user icon">
+                            <p>Anne J</p>
+                        </div>
+                        <div class="users">
+                            <img id="connection" src="images/alayne-s.jpg" alt="user icon">
+                            <p>Alayne T</p>
+                        </div>
+                        <div class="users">
+                            <img id="connection" src="images/arry-s.jpg" alt="user icon">
+                            <p>Arry Y</p>
+                        </div>
+                </div>
+                <div  id="more">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html
